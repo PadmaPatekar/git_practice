@@ -1,0 +1,24 @@
+//BufferReaderExample
+package program;  
+
+import java.io.*;
+
+public class BuffereRedExpl {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		InputStreamReader read=new InputStreamReader(System.in);
+		BufferedReader br=new BufferedReader(read);
+		String firstname="";
+		String surname="";
+		while(!firstname.equals("stop"))
+		{
+			System.out.println("Enter Details:");
+			firstname=br.readLine();
+			surname=br.readLine();
+			System.out.println("Details are:"+firstname+" "+surname);	
+		}
+		br.close();
+		read.close();
+	}
+}
